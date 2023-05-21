@@ -1,5 +1,3 @@
-import os
-
 from aiogram import types
 from aiogram.dispatcher.filters import CommandStart
 
@@ -8,5 +6,4 @@ from loader import dp
 
 @dp.message_handler(CommandStart())
 async def bot_start_no_state(message: types.Message):
-    await message.answer('Привет!\n'
-                         'Отправь мне артикул, а я тебе все запросы по ключевым')
+    await message.answer('Привет!')
